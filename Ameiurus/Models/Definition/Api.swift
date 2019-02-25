@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 
 public protocol Api {
     var baseUrl: String { get set }
