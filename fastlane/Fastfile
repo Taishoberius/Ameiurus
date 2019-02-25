@@ -14,7 +14,6 @@
 # update_fastlane
 
 lane :Ameiurus do
-  run_tests(scheme: "Ameiurus-melas")
   if git_branch() == 'master'
     pod_push(path: 'Ameiurus.podspec')
   end
