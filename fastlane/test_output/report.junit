@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='Ameiurus-melasTests.xctest' tests='2' failures='0'>
+  <testsuite name='Ameiurus_melasTests.Ameiurus_melasTests' tests='2' failures='0'>
+    <testcase classname='Ameiurus_melasTests.Ameiurus_melasTests' name='testExample' time='0.019'/>
+    <testcase classname='Ameiurus_melasTests.Ameiurus_melasTests' name='testPerformanceExample' time='0.423'/>
+  </testsuite>
+</testsuites>
