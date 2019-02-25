@@ -33,8 +33,6 @@
 		7F8F3C582224A6F1009FD776 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C3E2224A6F1009FD776 /* Message.swift */; };
 		7F8F3C5A2224A6F1009FD776 /* UserMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C402224A6F1009FD776 /* UserMessageCell.swift */; };
 		7F8F3C5B2224A6F1009FD776 /* ServerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C412224A6F1009FD776 /* ServerMessageCell.swift */; };
-		7F8F3C5D2224AF28009FD776 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8F3C5C2224AF28009FD776 /* Alamofire.framework */; };
-		D67F205698227D6B304DC156 /* Pods_Ameiurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F390D8269F9DF3A297862CB /* Pods_Ameiurus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,8 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F8F3C5D2224AF28009FD776 /* Alamofire.framework in Frameworks */,
-				D67F205698227D6B304DC156 /* Pods_Ameiurus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
