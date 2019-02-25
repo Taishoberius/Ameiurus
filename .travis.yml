@@ -6,6 +6,9 @@ branches:
 notifications:
   email: false
 before_install:
+before_install:
   - gem install bundler
-  - bundle install
+  - brew update
+  - bundle install && brew bundle
+install: bundle exec pod install --repo-update --silent
 script: bundle exec fastlane Ameiurus
