@@ -8,6 +8,7 @@ notifications:
 before_install:
 before_install:
   - gem install bundler
-  - bundle install
-  - bundle exec pod install
+  - brew update
+  - bundle install && brew bundle
+install: bundle exec pod install --repo-update --silent
 script: bundle exec fastlane Ameiurus
