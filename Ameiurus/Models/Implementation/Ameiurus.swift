@@ -13,17 +13,20 @@ public class Ameiurus {
     public var chatEndpoint: Endpoint
     private var apiType: ApiType
     public var botUI: BotUI = BotUI()
+    public var onAsk: ((String, @escaping (BotResponse) -> Void) -> Void)?
 
     public init(api: Api, chatEndpoint: Endpoint) {
         self.api = api
         self.chatEndpoint = chatEndpoint
         self.apiType = .other
+        self.onAsk = onAskFunction
     }
 
     public init(api: DialogFlowApi) {
         self.api = api
         self.chatEndpoint = api.queryEndpoint
         self.apiType = .dialogflow
+        self.onAsk = onAskFunction
     }
 
     public func ask(model: JSONModel, response: @escaping (BotResponse) -> Void) {
@@ -49,6 +52,12 @@ public class Ameiurus {
 
     public func instantiateBotChat() -> ChatViewController {
         return ChatViewController.instantiateBotChat(ameiurus: self)
+    }
+
+    private func onAskFunction(text: String, botResponse: @escaping (BotResponse) -> Void) {
+        try! ask(text: text, response: {
+            botResponse($0)
+        })
     }
 }
 

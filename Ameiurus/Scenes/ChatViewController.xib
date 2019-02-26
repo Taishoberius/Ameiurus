@@ -22,19 +22,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-XZ-F8K">
+                <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-XZ-F8K">
                     <rect key="frame" x="0.0" y="20" width="375" height="607"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2G-xm-0bo">
-                    <rect key="frame" x="5" y="632" width="314" height="30"/>
+                    <rect key="frame" x="5" y="632" width="330" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-4f-1EK">
-                    <rect key="frame" x="324" y="632" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-4f-1EK">
+                    <rect key="frame" x="340" y="632" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="blo-4f-1EK" secondAttribute="height" id="ZWe-x7-xbZ"/>
+                        <constraint firstAttribute="height" constant="30" id="muV-oh-ry9"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="send"/>
                     <connections>
                         <action selector="didTouchSend" destination="-1" eventType="touchUpInside" id="eIs-ra-XqZ"/>
                     </connections>
@@ -55,4 +59,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="send" width="384" height="384"/>
+    </resources>
 </document>

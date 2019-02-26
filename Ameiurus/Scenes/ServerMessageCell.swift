@@ -10,6 +10,7 @@ import UIKit
 
 class ServerMessageCell: UITableViewCell {
 
+    @IBOutlet weak var view: UIView!
     @IBOutlet weak var botImage: UIImageView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var messageContent: UILabel!
@@ -28,6 +29,7 @@ class ServerMessageCell: UITableViewCell {
 
     public func setUI(botUI: BotUI) {
         self.containerView.layer.borderColor = botUI.botBorderColors.cgColor
+        self.view.backgroundColor = botUI.backgroundColor
         self.containerView.backgroundColor = botUI.botColor
         self.messageContent.textColor = botUI.botFontColor
         self.botImage.image = botUI.botImage

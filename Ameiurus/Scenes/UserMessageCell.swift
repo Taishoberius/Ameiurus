@@ -13,6 +13,7 @@ class UserMessageCell: UITableViewCell {
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var messageContent: UILabel!
+    @IBOutlet weak var view: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +31,7 @@ class UserMessageCell: UITableViewCell {
     public func setUI(botUI: BotUI) {
         self.containerView.layer.borderColor = botUI.userBorderColors.cgColor
         self.containerView.backgroundColor = botUI.userColor
+        self.view.backgroundColor = botUI.backgroundColor
         self.messageContent.textColor = botUI.userFontColor
         self.userImage.image = botUI.userImage
     }

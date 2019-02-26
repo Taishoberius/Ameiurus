@@ -21,17 +21,18 @@ public class ChatViewController: UIViewController {
 
     @IBAction func didTouchSend() {
         guard let question = txtField.text,
-            !question.isEmpty
+            !question.isEmpty,
+            let ask = ameiurus.onAsk
         else {
             return
         }
         messages.insert(Message(text: question, type: 0), at: 0)
         tableView.reloadData()
         self.txtField.text = ""
-        try! ameiurus.ask(text: question) {
+        ask(question, {
             self.messages.insert(Message(text: $0.response, type: 1), at: 0)
             self.tableView.reloadData()
-        }
+        })
     }
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -44,6 +45,7 @@ public class ChatViewController: UIViewController {
         tableView.delegate = self
         txtField.delegate = self
         tableView.separatorStyle = .none
+        self.view.backgroundColor = ameiurus.botUI.backgroundColor
         self.tableView.backgroundColor = ameiurus.botUI.backgroundColor
         let userMsgCell = UINib(nibName: "UserMessageCell", bundle: nil)
         let serverMsgCell = UINib(nibName: "ServerMessageCell", bundle: nil)

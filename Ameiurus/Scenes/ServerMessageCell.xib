@@ -60,6 +60,7 @@
                 <outlet property="botImage" destination="swR-Wg-3HN" id="vqE-Yk-AYi"/>
                 <outlet property="containerView" destination="3Tt-mr-yUc" id="Lm5-ez-6mS"/>
                 <outlet property="messageContent" destination="6XU-7L-HkZ" id="DrZ-j6-NBV"/>
+                <outlet property="view" destination="H2p-sc-9uM" id="bvF-i3-zy3"/>
             </connections>
         </tableViewCell>
     </objects>
