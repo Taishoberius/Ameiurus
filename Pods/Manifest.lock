@@ -4,7 +4,7 @@ PODS:
   - Toolbar (0.5.0)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 4.8.1)
   - SnapKit
   - Toolbar
 
@@ -19,6 +19,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Toolbar: 240546f9a531266f639b713994b8b9eb7bb3391b
 
-PODFILE CHECKSUM: 1cc07d4bc32c0f43e8e54e976e5300b21aadfd71
+PODFILE CHECKSUM: c54aa974d3ec3fc406bd0bdcfb59f4fd6c9b9416
 
 COCOAPODS: 1.6.1
