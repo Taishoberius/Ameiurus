@@ -6,7 +6,7 @@ target 'Ameiurus' do
   use_frameworks!
 
   # Pods for Ameiurus-melas
-  pod 'Alamofire', '~> 4.7'
-  pod 'SnapKit', '~> 4.0.0'
+  pod 'Alamofire'
+  pod 'SnapKit'
   pod 'Toolbar'
 end
