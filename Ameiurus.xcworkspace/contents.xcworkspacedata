@@ -7,7 +7,4 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "container:../AMSample/AMSample.xcodeproj">
-   </FileRef>
 </Workspace>
