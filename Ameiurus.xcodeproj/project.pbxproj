@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7F0DD6062224A5E40037D9D2 /* Ameiurus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0DD6042224A5E40037D9D2 /* Ameiurus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F8F3C422224A6F1009FD776 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8F3C232224A6F1009FD776 /* Media.xcassets */; };
 		7F8F3C432224A6F1009FD776 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C262224A6F1009FD776 /* Api.swift */; };
 		7F8F3C442224A6F1009FD776 /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C272224A6F1009FD776 /* JSONModel.swift */; };
 		7F8F3C452224A6F1009FD776 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C282224A6F1009FD776 /* Endpoint.swift */; };
@@ -33,11 +32,22 @@
 		7F8F3C582224A6F1009FD776 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C3E2224A6F1009FD776 /* Message.swift */; };
 		7F8F3C5A2224A6F1009FD776 /* UserMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C402224A6F1009FD776 /* UserMessageCell.swift */; };
 		7F8F3C5B2224A6F1009FD776 /* ServerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C412224A6F1009FD776 /* ServerMessageCell.swift */; };
+		7F917FD82224BA54003A0374 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8F3C232224A6F1009FD776 /* Media.xcassets */; };
+		C7B003BBEB66F56B5073CE65 /* Pods_Ameiurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5867439F3160EB55E058FD4F /* Pods_Ameiurus.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7F917FD02224B6B6003A0374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F917FCC2224B6B5003A0374 /* AMSample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F0DD5E22224A57A0037D9D2;
+			remoteInfo = AMSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		032AB412C7B88BA1BF813ADB /* Pods-Ameiurus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.debug.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.debug.xcconfig"; sourceTree = "<group>"; };
-		1F390D8269F9DF3A297862CB /* Pods_Ameiurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameiurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5867439F3160EB55E058FD4F /* Pods_Ameiurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameiurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0DD6012224A5E40037D9D2 /* Ameiurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ameiurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0DD6042224A5E40037D9D2 /* Ameiurus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ameiurus.h; sourceTree = "<group>"; };
 		7F0DD6052224A5E40037D9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,7 +77,9 @@
 		7F8F3C402224A6F1009FD776 /* UserMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMessageCell.swift; sourceTree = "<group>"; };
 		7F8F3C412224A6F1009FD776 /* ServerMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerMessageCell.swift; sourceTree = "<group>"; };
 		7F8F3C5C2224AF28009FD776 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA5D0A65B1DCE3C1481F0E6D /* Pods-Ameiurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.release.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.release.xcconfig"; sourceTree = "<group>"; };
+		7F917FCC2224B6B5003A0374 /* AMSample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AMSample.xcodeproj; path = ../AMSample/AMSample.xcodeproj; sourceTree = "<group>"; };
+		8C6594B5D48CF975F73A5229 /* Pods-Ameiurus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.debug.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.debug.xcconfig"; sourceTree = "<group>"; };
+		D999E46BBF7BCFB2F4D25049 /* Pods-Ameiurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.release.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B003BBEB66F56B5073CE65 /* Pods_Ameiurus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +97,8 @@
 		65DCA8517546A4AB562DEF53 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				032AB412C7B88BA1BF813ADB /* Pods-Ameiurus.debug.xcconfig */,
-				FA5D0A65B1DCE3C1481F0E6D /* Pods-Ameiurus.release.xcconfig */,
+				8C6594B5D48CF975F73A5229 /* Pods-Ameiurus.debug.xcconfig */,
+				D999E46BBF7BCFB2F4D25049 /* Pods-Ameiurus.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -94,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				7F8F3C5C2224AF28009FD776 /* Alamofire.framework */,
-				1F390D8269F9DF3A297862CB /* Pods_Ameiurus.framework */,
+				5867439F3160EB55E058FD4F /* Pods_Ameiurus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +115,7 @@
 		7F0DD5F72224A5E40037D9D2 = {
 			isa = PBXGroup;
 			children = (
+				7F917FCC2224B6B5003A0374 /* AMSample.xcodeproj */,
 				7F0DD6032224A5E40037D9D2 /* Ameiurus */,
 				7F0DD6022224A5E40037D9D2 /* Products */,
 				65DCA8517546A4AB562DEF53 /* Pods */,
@@ -191,6 +205,14 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		7F917FCD2224B6B5003A0374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F917FD12224B6B6003A0374 /* AMSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -209,7 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F0DD6092224A5E40037D9D2 /* Build configuration list for PBXNativeTarget "Ameiurus" */;
 			buildPhases = (
-				3C949655BEBA73C2A07DD25B /* [CP] Check Pods Manifest.lock */,
+				FFA074231D0D2DA5C73ECE2E /* [CP] Check Pods Manifest.lock */,
 				7F0DD5FC2224A5E40037D9D2 /* Headers */,
 				7F0DD5FD2224A5E40037D9D2 /* Sources */,
 				7F0DD5FE2224A5E40037D9D2 /* Frameworks */,
@@ -244,10 +266,17 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7F0DD5F72224A5E40037D9D2;
 			productRefGroup = 7F0DD6022224A5E40037D9D2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7F917FCD2224B6B5003A0374 /* Products */;
+					ProjectRef = 7F917FCC2224B6B5003A0374 /* AMSample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7F0DD6002224A5E40037D9D2 /* Ameiurus */,
@@ -255,13 +284,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7F917FD12224B6B6003A0374 /* AMSample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AMSample.app;
+			remoteRef = 7F917FD02224B6B6003A0374 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		7F0DD5FF2224A5E40037D9D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F917FD82224BA54003A0374 /* Media.xcassets in Resources */,
 				7F8F3C552224A6F1009FD776 /* ChatViewController.xib in Resources */,
-				7F8F3C422224A6F1009FD776 /* Media.xcassets in Resources */,
 				7F8F3C572224A6F1009FD776 /* ServerMessageCell.xib in Resources */,
 				7F8F3C562224A6F1009FD776 /* UserMessageCell.xib in Resources */,
 			);
@@ -270,7 +309,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C949655BEBA73C2A07DD25B /* [CP] Check Pods Manifest.lock */ = {
+		FFA074231D0D2DA5C73ECE2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,7 +489,7 @@
 		};
 		7F0DD60A2224A5E40037D9D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 032AB412C7B88BA1BF813ADB /* Pods-Ameiurus.debug.xcconfig */;
+			baseConfigurationReference = 8C6594B5D48CF975F73A5229 /* Pods-Ameiurus.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,7 +514,7 @@
 		};
 		7F0DD60B2224A5E40037D9D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA5D0A65B1DCE3C1481F0E6D /* Pods-Ameiurus.release.xcconfig */;
+			baseConfigurationReference = D999E46BBF7BCFB2F4D25049 /* Pods-Ameiurus.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

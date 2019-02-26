@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DialogFlowVersion: String {
+public enum DialogFlowVersion: String {
     case V1 = "v1"
     case V2 = "v2"
 }

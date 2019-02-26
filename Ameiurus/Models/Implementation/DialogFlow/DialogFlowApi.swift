@@ -9,16 +9,16 @@
 import Foundation
 import Alamofire
 
-struct DialogFlowApi: Api {
-    var endpoints: [String : Endpoint] = [:]
-    var baseUrl: String
-    var accessToken: String
+public struct DialogFlowApi: Api {
+    public var endpoints: [String : Endpoint] = [:]
+    public var baseUrl: String
+    public var accessToken: String
     var version: DialogFlowVersion
     var lang: LanguageTag
     let sessionId = UUID().uuidString
     let queryEndpoint: DialogFlowEndpoint
 
-    init(version: DialogFlowVersion, accessToken: String, lang: LanguageTag) {
+    public init(version: DialogFlowVersion, accessToken: String, lang: LanguageTag) {
         self.accessToken = accessToken
         self.version = version
         self.baseUrl = "https://api.dialogflow.com/\(version.rawValue)/"

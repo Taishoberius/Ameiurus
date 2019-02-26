@@ -9,31 +9,31 @@
 import Foundation
 
 public class Ameiurus {
-    var api: Api
-    var chatEndpoint: Endpoint
+    public var api: Api
+    public var chatEndpoint: Endpoint
     private var apiType: ApiType
-    var botUI: BotUI = BotUI()
+    public var botUI: BotUI = BotUI()
 
-    init(api: Api, chatEndpoint: Endpoint) {
+    public init(api: Api, chatEndpoint: Endpoint) {
         self.api = api
         self.chatEndpoint = chatEndpoint
         self.apiType = .other
     }
 
-    init(api: DialogFlowApi) {
+    public init(api: DialogFlowApi) {
         self.api = api
         self.chatEndpoint = api.queryEndpoint
         self.apiType = .dialogflow
     }
 
-    func ask(model: JSONModel, response: @escaping (BotResponse) -> Void) {
+    public func ask(model: JSONModel, response: @escaping (BotResponse) -> Void) {
         chatEndpoint.parameters = model
         api.call(endpoint: chatEndpoint) {
             response($0)
         }
     }
 
-    func ask(text: String, response: @escaping (BotResponse) -> Void) throws {
+    public func ask(text: String, response: @escaping (BotResponse) -> Void) throws {
         guard
             apiType == .dialogflow,
             let api = api as? DialogFlowApi
@@ -47,11 +47,11 @@ public class Ameiurus {
         }
     }
 
-    func instantiateBotChat() -> ChatViewController {
+    public func instantiateBotChat() -> ChatViewController {
         return ChatViewController.instantiateBotChat(ameiurus: self)
     }
 }
 
-enum AmeiurusError: Error {
+public enum AmeiurusError: Error {
     case invalidApiTypeError
 }

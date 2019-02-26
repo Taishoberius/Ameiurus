@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
+public class ChatViewController: UIViewController {
 
     var ameiurus: Ameiurus!
 
@@ -37,7 +37,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var messages: [Message] = []
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         tableView.transform = CGAffineTransform(rotationAngle: -(CGFloat)(Double.pi))
         tableView.dataSource = self
@@ -58,11 +58,11 @@ class ChatViewController: UIViewController {
 }
 
 extension ChatViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let idx = self.messages.index(self.messages.startIndex, offsetBy: indexPath.row)
         let message = self.messages[idx]
         if message.type == 0 {

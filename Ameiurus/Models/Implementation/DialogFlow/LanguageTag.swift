@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LanguageTag: String {
+public enum LanguageTag: String {
     case fr = "fr"
     case en = "en"
     case es = "es"
