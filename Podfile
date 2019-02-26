@@ -7,6 +7,4 @@ target 'Ameiurus' do
 
   # Pods for Ameiurus-melas
   pod 'Alamofire', '~> 4.8.1'
-  pod 'SnapKit'
-  pod 'Toolbar'
 end

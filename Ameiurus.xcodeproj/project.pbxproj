@@ -33,6 +33,9 @@
 		7F8F3C5A2224A6F1009FD776 /* UserMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C402224A6F1009FD776 /* UserMessageCell.swift */; };
 		7F8F3C5B2224A6F1009FD776 /* ServerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C412224A6F1009FD776 /* ServerMessageCell.swift */; };
 		7F9180A32224BDD5003A0374 /* Ameiurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0DD6012224A5E40037D9D2 /* Ameiurus.framework */; };
+		7FABC37622259B4800359295 /* bot_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FABC37522259B4800359295 /* bot_avatar.png */; };
+		7FABC37922259B4F00359295 /* user_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FABC37722259B4F00359295 /* user_avatar.png */; };
+		7FABC37A22259B4F00359295 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FABC37822259B4F00359295 /* send.png */; };
 		923621478D4D416431888831 /* Pods_Ameiurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1CC69519D5CD9C5E6939A /* Pods_Ameiurus.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,9 @@
 		7F8F3C402224A6F1009FD776 /* UserMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMessageCell.swift; sourceTree = "<group>"; };
 		7F8F3C412224A6F1009FD776 /* ServerMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerMessageCell.swift; sourceTree = "<group>"; };
 		7F8F3C5C2224AF28009FD776 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FABC37522259B4800359295 /* bot_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bot_avatar.png; path = Ameiurus/bot_avatar.png; sourceTree = SOURCE_ROOT; };
+		7FABC37722259B4F00359295 /* user_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_avatar.png; path = Ameiurus/user_avatar.png; sourceTree = SOURCE_ROOT; };
+		7FABC37822259B4F00359295 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = send.png; path = Ameiurus/send.png; sourceTree = SOURCE_ROOT; };
 		BBE33DBF4BC891DDCCFE45EE /* Pods-Ameiurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.release.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +139,9 @@
 		7F8F3C242224A6F1009FD776 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7FABC37822259B4F00359295 /* send.png */,
+				7FABC37722259B4F00359295 /* user_avatar.png */,
+				7FABC37522259B4800359295 /* bot_avatar.png */,
 				7F8F3C252224A6F1009FD776 /* Definition */,
 				7F8F3C292224A6F1009FD776 /* Implementation */,
 			);
@@ -262,9 +271,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FABC37922259B4F00359295 /* user_avatar.png in Resources */,
+				7FABC37622259B4800359295 /* bot_avatar.png in Resources */,
 				7F8F3C552224A6F1009FD776 /* ChatViewController.xib in Resources */,
 				7F8F3C572224A6F1009FD776 /* ServerMessageCell.xib in Resources */,
 				7F8F3C562224A6F1009FD776 /* UserMessageCell.xib in Resources */,
+				7FABC37A22259B4F00359295 /* send.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

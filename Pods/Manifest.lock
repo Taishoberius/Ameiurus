@@ -1,24 +1,16 @@
 PODS:
   - Alamofire (4.8.1)
-  - SnapKit (4.2.0)
-  - Toolbar (0.5.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.1)
-  - SnapKit
-  - Toolbar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - SnapKit
-    - Toolbar
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  Toolbar: 240546f9a531266f639b713994b8b9eb7bb3391b
 
-PODFILE CHECKSUM: c54aa974d3ec3fc406bd0bdcfb59f4fd6c9b9416
+PODFILE CHECKSUM: 3f9b2064ea024f9493a6b4fe1cf36f6225c66452
 
 COCOAPODS: 1.6.1
