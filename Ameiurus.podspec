@@ -9,4 +9,5 @@ s.source       = { :git => "https://github.com/Taishoberius/Ameiurus.git", :tag 
 s.source_files = 'Ameiurus/**/*.{swift,h}'
 s.ios.deployment_target = '9.0'
 s.swift_version = '4.2'
+s.dependency 'Alamofire', '~> 4.8'
 end
