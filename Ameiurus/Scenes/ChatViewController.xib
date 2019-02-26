@@ -38,7 +38,7 @@
                         <constraint firstAttribute="width" secondItem="blo-4f-1EK" secondAttribute="height" id="ZWe-x7-xbZ"/>
                         <constraint firstAttribute="height" constant="30" id="muV-oh-ry9"/>
                     </constraints>
-                    <state key="normal" title="Button" image="send"/>
+                    <state key="normal" title="Button" image="send.png"/>
                     <connections>
                         <action selector="didTouchSend" destination="-1" eventType="touchUpInside" id="eIs-ra-XqZ"/>
                     </connections>
@@ -60,6 +60,6 @@
         </view>
     </objects>
     <resources>
-        <image name="send" width="384" height="384"/>
+        <image name="send.png" width="512" height="512"/>
     </resources>
 </document>

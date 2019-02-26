@@ -16,6 +16,6 @@ public struct BotUI {
     var botBorderColors: UIColor = .green
     var botColor: UIColor = .white
     var botFontColor: UIColor = .green
-    var botImage: UIImage? = #imageLiteral(resourceName: "bot-avatar")
-    var userImage: UIImage? = #imageLiteral(resourceName: "user-avatar")
+    var botImage: UIImage? = UIImage(named: "bot-avatar")
+    var userImage: UIImage? = UIImage(named: "user-avatar")
 }
