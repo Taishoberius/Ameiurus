@@ -42,7 +42,11 @@ public struct DialogFlowApi: Api {
                     }
                     let decoder = JSONDecoder()
                     let obj = try! decoder.decode(DialogFlowResponse.self, from: data)
-                    callback(BotResponse.init(type: .success, response: obj.result?.speech ?? ""))
+                    var res = obj.result?.speech ?? ""
+                    if res == "" {
+                        res = "🥴🤔"
+                    }
+                    callback(BotResponse.init(type: .success, response: res))
                     break
                 }
         }
