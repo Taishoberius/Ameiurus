@@ -27,10 +27,10 @@ public class ChatViewController: UIViewController {
         }
         messages.insert(Message(text: question, type: 0), at: 0)
         tableView.reloadData()
+        self.txtField.text = ""
         try! ameiurus.ask(text: question) {
             self.messages.insert(Message(text: $0.response, type: 1), at: 0)
             self.tableView.reloadData()
-            self.txtField.text = ""
         }
     }
     @IBOutlet weak var txtField: UITextField!
@@ -41,6 +41,7 @@ public class ChatViewController: UIViewController {
         super.viewDidLoad()
         tableView.transform = CGAffineTransform(rotationAngle: -(CGFloat)(Double.pi))
         tableView.dataSource = self
+        tableView.delegate = self
         txtField.delegate = self
         tableView.separatorStyle = .none
         self.tableView.backgroundColor = ameiurus.botUI.backgroundColor
@@ -79,19 +80,26 @@ extension ChatViewController: UITableViewDataSource {
             cell.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
             return cell
         }
-        
+    }
+}
+
+extension ChatViewController: UITableViewDelegate {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44 * CGFloat(((messages[indexPath.row].text.count / 33) + 1))
     }
 }
 
 extension ChatViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.frame.origin.y = 0
         self.txtField.endEditing(true)
         self.didTouchSend()
         return true
     }
 
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+
+    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         self.view.frame.origin.y = -345
         return true
     }

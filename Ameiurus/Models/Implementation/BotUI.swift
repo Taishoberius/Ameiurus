@@ -6,7 +6,7 @@
 //  Copyright © 2019 David Linhares. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct BotUI {
     var backgroundColor: UIColor = .white
@@ -16,6 +16,6 @@ public struct BotUI {
     var botBorderColors: UIColor = .green
     var botColor: UIColor = .white
     var botFontColor: UIColor = .green
-    var botImage: UIImage?
-    var userImage: UIImage?
+    var botImage: UIImage? = #imageLiteral(resourceName: "bot-avatar")
+    var userImage: UIImage? = #imageLiteral(resourceName: "user-avatar")
 }
