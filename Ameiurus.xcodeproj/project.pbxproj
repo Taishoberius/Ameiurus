@@ -34,11 +34,12 @@
 		7F8F3C5B2224A6F1009FD776 /* ServerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F3C412224A6F1009FD776 /* ServerMessageCell.swift */; };
 		7F917FD82224BA54003A0374 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8F3C232224A6F1009FD776 /* Media.xcassets */; };
 		7F9180A32224BDD5003A0374 /* Ameiurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0DD6012224A5E40037D9D2 /* Ameiurus.framework */; };
-		C7B003BBEB66F56B5073CE65 /* Pods_Ameiurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5867439F3160EB55E058FD4F /* Pods_Ameiurus.framework */; };
+		923621478D4D416431888831 /* Pods_Ameiurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1CC69519D5CD9C5E6939A /* Pods_Ameiurus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5867439F3160EB55E058FD4F /* Pods_Ameiurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameiurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA1CC69519D5CD9C5E6939A /* Pods_Ameiurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameiurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5444AB36CF6260A789E61D /* Pods-Ameiurus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.debug.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.debug.xcconfig"; sourceTree = "<group>"; };
 		7F0DD6012224A5E40037D9D2 /* Ameiurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ameiurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0DD6042224A5E40037D9D2 /* Ameiurus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ameiurus.h; sourceTree = "<group>"; };
 		7F0DD6052224A5E40037D9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,8 +69,7 @@
 		7F8F3C402224A6F1009FD776 /* UserMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMessageCell.swift; sourceTree = "<group>"; };
 		7F8F3C412224A6F1009FD776 /* ServerMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerMessageCell.swift; sourceTree = "<group>"; };
 		7F8F3C5C2224AF28009FD776 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C6594B5D48CF975F73A5229 /* Pods-Ameiurus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.debug.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.debug.xcconfig"; sourceTree = "<group>"; };
-		D999E46BBF7BCFB2F4D25049 /* Pods-Ameiurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.release.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.release.xcconfig"; sourceTree = "<group>"; };
+		BBE33DBF4BC891DDCCFE45EE /* Pods-Ameiurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameiurus.release.xcconfig"; path = "Target Support Files/Pods-Ameiurus/Pods-Ameiurus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B003BBEB66F56B5073CE65 /* Pods_Ameiurus.framework in Frameworks */,
 				7F9180A32224BDD5003A0374 /* Ameiurus.framework in Frameworks */,
+				923621478D4D416431888831 /* Pods_Ameiurus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +88,8 @@
 		65DCA8517546A4AB562DEF53 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8C6594B5D48CF975F73A5229 /* Pods-Ameiurus.debug.xcconfig */,
-				D999E46BBF7BCFB2F4D25049 /* Pods-Ameiurus.release.xcconfig */,
+				4D5444AB36CF6260A789E61D /* Pods-Ameiurus.debug.xcconfig */,
+				BBE33DBF4BC891DDCCFE45EE /* Pods-Ameiurus.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				7F8F3C5C2224AF28009FD776 /* Alamofire.framework */,
-				5867439F3160EB55E058FD4F /* Pods_Ameiurus.framework */,
+				3CA1CC69519D5CD9C5E6939A /* Pods_Ameiurus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F0DD6092224A5E40037D9D2 /* Build configuration list for PBXNativeTarget "Ameiurus" */;
 			buildPhases = (
-				FFA074231D0D2DA5C73ECE2E /* [CP] Check Pods Manifest.lock */,
+				9BA6E9E4F73DD243ADD81A6B /* [CP] Check Pods Manifest.lock */,
 				7F0DD5FC2224A5E40037D9D2 /* Headers */,
 				7F0DD5FD2224A5E40037D9D2 /* Sources */,
 				7F0DD5FE2224A5E40037D9D2 /* Frameworks */,
@@ -275,7 +275,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FFA074231D0D2DA5C73ECE2E /* [CP] Check Pods Manifest.lock */ = {
+		9BA6E9E4F73DD243ADD81A6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +455,7 @@
 		};
 		7F0DD60A2224A5E40037D9D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C6594B5D48CF975F73A5229 /* Pods-Ameiurus.debug.xcconfig */;
+			baseConfigurationReference = 4D5444AB36CF6260A789E61D /* Pods-Ameiurus.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -480,7 +480,7 @@
 		};
 		7F0DD60B2224A5E40037D9D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D999E46BBF7BCFB2F4D25049 /* Pods-Ameiurus.release.xcconfig */;
+			baseConfigurationReference = BBE33DBF4BC891DDCCFE45EE /* Pods-Ameiurus.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
